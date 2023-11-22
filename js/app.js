@@ -26,7 +26,7 @@ const incrementarMinutos = () => {
     contadorMinutos++;
     
     if (contadorMinutos <= 60) {
-        minutos.innerText = ' ' + contadorMinutos + ' : ';
+        minutos.innerText = contadorMinutos + ' : ';
     } else {
         contadorMinutos = 0;
         
@@ -38,7 +38,7 @@ const incrementarHoras = () => {
     contadorHoras++;
     
     if (contadorHoras <= 24) {
-        horas.innerText = ' ' + contadorHoras + ' : ';
+        horas.innerText = contadorHoras + ' : ';
     } else {
         contadorHoras = 0;
     }
@@ -59,7 +59,7 @@ const setFecha = () =>{
     const mes = fechaActual.getMonth();
     const dia = fechaActual.getDay();
 
-    fecha.innerText = `${dia} / ${mes} / ${año}`;
+    fecha.innerText = `Fecha: ${dia} / ${mes} / ${año}`;
 
 }
 
